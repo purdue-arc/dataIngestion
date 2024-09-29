@@ -5,10 +5,9 @@ import requests
 import json
 
 # Best practice: store your credentials in environment variables
-wcd_url = "https://sxi7vehirjur8cxqlehmog.c0.us-east1.gcp.weaviate.cloud"
-wcd_api_key = "scmKsTnfTazVo4eCEmYi7RmrdfigCtyJdYDg"
-openai_api_key = "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"
-
+wcd_url = ""
+wcd_api_key = ""
+openai_api_key = ""
 client = weaviate.connect_to_weaviate_cloud(
     cluster_url=wcd_url,                   # Replace with your Weaviate Cloud URL
     auth_credentials=wvc.init.Auth.api_key(wcd_api_key),    # Replace with your Weaviate Cloud key
