@@ -5,9 +5,11 @@ import requests
 import json
 
 # Best practice: store your credentials in environment variables
+'''
 wcd_url = ""
 wcd_api_key = ""
 openai_api_key = ""
+'''
 client = weaviate.connect_to_weaviate_cloud(
     cluster_url=wcd_url,                   # Replace with your Weaviate Cloud URL
     auth_credentials=wvc.init.Auth.api_key(wcd_api_key),    # Replace with your Weaviate Cloud key
